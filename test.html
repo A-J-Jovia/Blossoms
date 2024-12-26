@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="x-icon" href="CQlogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<title> Cure Quest </title>
+  </head>
+    <style>
+
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+body{
+    background-color:white;
+    
+}
+header
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #191970;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#191970;
+    cursor: pointer;
+}
+.action{
+  padding: 10px 25px;
+    background-color:white;
+    color:#191970;
+    font-weight: bold;
+    border-radius: 50px;
+  
+}
+
+
+
+.logo {
+    font-family:'Great Vibes', cursive;
+    cursor:pointer;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#ffffff;
+    font-weight:bold;
+    margin-right: auto;
+
+}
+.nav-links{
+    list-style:none;
+}
+
+.nav-links li{
+    display:inline-block;
+    padding: 5px 20px;
+}
+.nav-links li a{
+   transition:0.3s;
+   font-size:18px;
+
+   border-radius: 50px;
+
+}
+
+.nav-links li a:hover{
+    color:#191970;
+    padding: 10px 25px;
+    font-weight:bold;
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+legend{
+  font-size: 25px;
+  background-color: rgb(157, 158, 158);
+  color:#191970;
+  padding: 5px 10px;
+  margin-bottom:10px;
+
+
+}
+
+fieldset{
+  border: 2px solid #ccc;
+  padding 20px;
+  border-radius: 10 px;
+  background-color: #fff;
+}
+
+
+
+  
+    /*
+     h2{
+      text-align:center;
+      color:#191970;
+      font-size:40px;
+     }
+    img,video {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }*/
+    
+         .tool-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.0rem;
+          margin: 50px;
+    
+        }
+
+         .tool-item {
+          text-align: center;
+          background: #fff;
+          color:#191970;
+          border: 2px solid;
+          border-radius:8px ;
+          padding:5px;
+          transition: 0.5s ease;
+        
+        }
+
+        .tool-item:hover{
+          border: 8px solid;
+          border-radius:15px;
+          padding:5px;
+          background-color:#191970;
+          color:#fff;
+        }
+
+        .tool-grid .tool-item .fa-heart{
+          color:#191970;
+          position:relative;
+          left:-40%;
+          top:10px;
+          font-size: large;
+        }
+        .tool-grid .tool-item .fa-heart:hover{
+          color:red;
+        }
+        .tool-grid .tool-item .fa-star,.fa-star-half-stroke{
+          color:goldenrod;
+        }
+        .book-grid .book-item .fa-star,.fa-star-half-stroke{
+          color:goldenrod;
+        }
+
+        .tool-item .buy-cart
+        {
+        display:flex;
+        justify-content: center;
+        }
+
+.buy-cart .buynow
+{
+    border:0.2px solid #191970;
+    color: rgb(255, 255, 255);
+    background-color: #191970;
+    padding : 10px 20px;
+    width: 100%;
+    font-size: large;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+
+.buy-cart .buynow:hover{
+    background-color: rgb(74, 6, 6);
+    color:#11bc3c;
+    border: none;
+}
+
+        .tool-item img {
+          width: 50%;
+          border-color: #191970;
+        }
+        .tool-item h3 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.2rem;
+        }
+        .tool-item h4{
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.6 rem;
+        }
+        .tool-item p {
+          font-size: 1.3rem;
+        }
+
+      
+       
+         .app-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.5rem;
+          margin: 50px;
+        }
+      .app {
+          text-align: center;
+          background: #fff;
+          border-radius: 2px solid;
+          border-color: #191970;
+          padding: 5px;
+          transition:0.3s ease;
+        }
+
+        .app:hover {
+          text-align: center;
+          background-color:#191970;
+          color: #fff;
+          border-radius: 2px solid;
+          border-color: #191970;
+          padding: 5px;
+          
+        }
+
+        span{
+          font: 100px;
+          background-color: aliceblue;
+
+        }
+      
+         .book-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.5rem;
+          margin: 50px;
+        }
+
+      .book-item {
+          text-align: center;
+          background: #fff;
+          border: 2px solid;
+          border-color: #191970;
+          padding: 5px;
+          transition: 0.3s ease;
+        }
+      .book-item:hover{
+        border: 8px solid;
+          border-radius:15px;
+          padding:5px;
+          background-color:#191970;
+          color:#fff;
+
+
+
+      }  
+        .book-item img {
+          width: 50%;
+          border: 2px solid;
+          border-color: #191970;
+        }
+      
+       
+       footer {
+          background:#191970;
+          text-align: center;
+          padding: 1rem;
+          color:white;
+        }
+        </style>
+      <body>
+        
+    <!--    <h1 style="font-family:verdana;"> <i> Cure Quest🩺</i> </h1>
+        <img src="CQlogo.jpg" alt="This is CQ Logo" title="Take care!" style="width:20%; font-size:40px;"> -->
+        
+        <header>
+            <img src="CQlogo.jpg" height="auto" width="75px">
+            <a href="#" class="logo">Cure Quest🩺</a>
+        
+        <nav>
+            <ul class="nav-links">
+            <li><a href="test.html" class="action">Home</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="#">Medicines</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+        </nav>
+        
+    </header>
+
+        
+
+
+    
+        <fieldset>
+        
+        <legend><b>Stress-relief tools</b></legend>
+        <h5>Here are some newly launched Stress-relief tools</h5>
+        <section id="home">
+        <div class="tool-grid">
+
+        <div class="tool-item">
+          <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+        <img src="https://m.media-amazon.com/images/I/61ktzrcIkDL.SL1500.jpg" alt="Neck massager" id="tool-img">
+        <br>
+        <br>
+            <p><b>Neck Massager</b></p> 
+            <br> 
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+
+
+      <script>
+            document.getElementById('tool-img').src = "https://m.media-amazon.com/images/I/61ktzrcIkDL.SL1500.jpg";
+      </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/61g80s6LZLL.AC_UL480_FMwebp_QL65.jpg" alt="massage gun" id="massage gun-img">
+          <br>
+          <br>
+          <h3>Massage Gun</h3>
+          <br>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+
+          <script>
+            document.getElementById('massage gun-img').src = "https://m.media-amazon.com/images/I/61g80s6LZLL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/51x-boh8rfL.AC_UL480_FMwebp_QL65.jpg" alt="gel ball" id="gel ball-img"><br><br>
+          <h3>Gel Exercise Ball</h3>
+          <br>
+          
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+    
+          <script>
+            document.getElementById('gel ball-img').src = "https://m.media-amazon.com/images/I/51x-boh8rfL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/813tHH+fWxL.AC_UL480_FMwebp_QL65.jpg" alt="foot massage" id="foot massage-img"><br><br>
+          <h3>Wooden Foot Massager</h3>
+          <br>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+              
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+          <script>
+            document.getElementById('foot massage-img').src = "https://m.media-amazon.com/images/I/813tHH+fWxL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/715o7Yupg4L.AC_UL960_FMwebp_QL65.jpg" alt="pulse" id="pulse-img">
+          <br><br>
+          <h3>Electric pulse Neck Massager</h3>
+          <br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          
+          </div>
+    
+          <script>
+            document.getElementById('pulse-img').src = "https://m.media-amazon.com/images/I/715o7Yupg4L.AC_UL960_FMwebp_QL65.jpg";
+          </script>
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br>
+          <img src="https://m.media-amazon.com/images/I/51B-BrGDPhL.AC_UL480_FMwebp_QL65.jpg" alt="pp" id="pp-img">
+          <br><br>
+          <h3>Migraine Pressure Point Clip</h3>
+          <br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          
+          </div>
+          <script>
+            document.getElementById('pp-img').src = "https://m.media-amazon.com/images/I/51B-BrGDPhL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+        </div>
+        <br><a href="https://www.amazon.in/s?k=stress+relief+tools&crid=1BQE4OEZEX5GN&sprefix=stress+relief+tools%2Caps%2C417&ref=nb_sb_noss_1" class="more-button">More Tools</a>
+      </section>  
+        </fieldset>
+        
+        <br><hr><hr><br>
+
+        <!--Medication Apps-->
+
+        <fieldset>
+        <legend><b>Medication Apps</b></legend>
+            <h5>Here are some popular medication apps and software that can help you manage your medications effectively</h5>
+        <section id="home2">
+        <div class="app-grid">
+          <div class="app">
+          <img src="https://th.bing.com/th/id/OIP.5IK6o2wesiuO0JEHaPzxbQHaDT?w=325&h=155&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="MyTherapy" id="app1-img">
+          <h3><a href="https://www.mytherapyapp.com/" class="mytherapy">My Therapy</a></h3>
+          <p>This app offers medication reminders, mood tracking, and health measurements like blood pressure and weight</p>
+        </div>
+
+      <script>
+            document.getElementById('app1-img').src = "https://th.bing.com/th/id/OIP.5IK6o2wesiuO0JEHaPzxbQHaDT?w=325&h=155&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+      </script>
+      
+          <div class="app">
+          <img src="https://th.bing.com/th/id/OIP.QEhD6IxknXxpSuribVeQrQHaDt?w=341&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="MediSafe" id="app2-img">
+          <h3><a href="https://www.medisafe.com/" class="medisafe">MediSafe</a></h3>
+          <p>A highly recommended app by physicians and pharmacists, Medisafe helps you track your medications, set reminders, and even share progress with friends or family</p>
+        </div>
+
+      <script>
+            document.getElementById('app2-img').src = "https://th.bing.com/th/id/OIP.QEhD6IxknXxpSuribVeQrQHaDt?w=341&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+      </script>
+      
+          <div class="app">
+          <img src="https://daanow.org/wp-content/uploads/2022/08/Dosecast-app.png" alt="DoseCast" id="app3-img">
+          <h3><a href="https://dosecast.com/" class="dosecast">DoseCast</a></h3>
+          <p>This app allows you to enter medication details and set reminders on a daily, weekly, or monthly schedule</p>
+        </div>
+
+      <script>
+            document.getElementById('app3-img').src = "https://daanow.org/wp-content/uploads/2022/08/Dosecast-app.png";
+      </script>
+      
+          <div class="app">
+          <img src="https://th.bing.com/th/id/OIP.MeWDRw-_ejoTNjgOB1CqdgHaHb?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Medhelper" id="app4-img">
+          <h3><a href="https://medhelper.com/" class="medhelper">MedHelper</a></h3>
+          <p>A highly recommended app by physicians and pharmacists, Medisafe helps you track your medications, set reminders, and even share progress with friends or family</p>
+        </div>
+
+      <script>
+            document.getElementById('app4-img').src = "https://th.bing.com/th/id/OIP.MeWDRw-_ejoTNjgOB1CqdgHaHb?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+      </script>
+      
+        </fieldset>
+        
+        <br><hr><hr><br>
+
+      <!--Self-Help Books-->  
+    
+      <legend><b>Self-help Books</b></legend>
+        <h5>Here are some highly recommended health and wellness self-help books</h5>
+
+
+        <section id="home3">
+    
+        <div class="book-grid">
+          <div class="book-item">
+          <br>
+          <img src="https://th.bing.com/th/id/OIP.wsWRLXa3Xoeb-SyG66VedgHaJR?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="The Power of Now" id="book1">
+          <br><br>
+          <h3><b>The Power of Now</b><br>by Eckhart Tolle</h3>
+          <br>
+          <p>Focuses on living in the present moment to cultivate inner peace.</p><br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+        </div>
+      <script>
+            document.getElementById('book1').src = "https://th.bing.com/th/id/OIP.wsWRLXa3Xoeb-SyG66VedgHaJR?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+      </script>
+
+
+      <div class="book-item">
+        <br>
+        <img src="https://th.bing.com/th/id/OIP.wsWRLXa3Xoeb-SyG66VedgHaJR?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="The Power of Now" id="book1"><br><br>
+        <h3><b>The Power of Now</b><br>by Eckhart Tolle</h3><br>
+        <p>Focuses on living in the present moment to cultivate inner peace.</p><br><br>
+      
+        <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+      </div>
+    <script>
+          document.getElementById('book1').src = "https://th.bing.com/th/id/OIP.wsWRLXa3Xoeb-SyG66VedgHaJR?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+    </script>
+          <div class="book-item">
+            <br>
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1594559067i/18693771.jpg" alt="The Body Keeps the Score" id="book2">
+          <br>
+          <br>
+          <h3><b>The Body Keeps the Score</b><br>by Bessel van der Kolk</h3>
+          <br>
+         <p>Explores the connection between trauma and the body, offering insights into healing.</p>
+         <br>
+         <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+          <script>
+            document.getElementById('book2').src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1594559067i/18693771.jpg";
+          </script>
+          <div class="book-item">
+            <br>
+          <img src="https://th.bing.com/th/id/OIP.Gu674FmLSddEAF_D0rJPxgHaL6?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Radical Acceptance" id="book3">
+          <br>
+          <br>
+          <h3><b>Radical Acceptance</b><br>by Tara Brach</h3>
+          <br>
+          <p>Teaches self-acceptance and mindfulness practices for inner peace.</p>
+          <br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+    
+          <script>
+            document.getElementById('book3').src = "https://th.bing.com/th/id/OIP.Gu674FmLSddEAF_D0rJPxgHaL6?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+          </script>
+          <div class="book-item">
+            <br>
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1354898395i/1963638.jpg" alt="foot massage" id="book4">
+          <br><br>
+          <h3><b>The Untethered Soul</b><br>by Michael A. Singer</h3><br>
+          <p>Encourages readers to free themselves from limiting thoughts to realize their full potential.</p><br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+            <br>
+          </div>
+
+          <script>
+            document.getElementById('book4').src = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1354898395i/1963638.jpg";
+          </script>
+
+
+          <div class="book-item">
+            <br>
+          <img src="https://th.bing.com/th/id/OIP.pQfiPfGgi2nKY2W5xDH8owHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="The Telomere Effect" id="book5">
+          <br><br>
+          <h3><b>The Telomere Effect</b><br>by Dr. Elizabeth Blackburn and Dr. Elissa Epel</h3><br>
+          <p>Discusses the impact of lifestyle on cellular aging and health.</p><br><br>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.199</h3><br>
+            <h4>FREE Delivery</h4><br>
+            <div class="buy-cart"></div>
+            <button class="buynow">Buy</button>
+            <button class="buynow">Add to Cart</button>
+          </div>
+    
+          <script>
+            document.getElementById('book5').src = "https://th.bing.com/th/id/OIP.pQfiPfGgi2nKY2W5xDH8owHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7";
+          </script>
+    
+        <br><a href="https://www.amazon.in/s?k=self+help+books&crid=3881TNKX2V87J&sprefix=self+help+books%2Caps%2C339&ref=nb_sb_noss_1" class="more-button2">More Books</a>
+      </section>
+        
+        </fieldset>
+        
+    <footer>
+        <p>&copy; 2024 Cure Quest. All rights reserved.</p>
+    </footer>
+        
+      </body>
+    </html>
