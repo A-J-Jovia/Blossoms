@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="x-icon" href="CQlogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<title> Cure Quest-Tools </title>
+  </head>
+    <style>
+
+*{
+  
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  
+}
+
+a{
+  text-decoration: none;
+  color:white
+}
+
+body{
+background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+  
+}
+header
+{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #191970;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+  cursor: pointer;
+}
+.action{
+  padding: 10px 25px;
+  background-color:white;
+  color:#191970;
+  font-weight: bold;
+  border-radius: 50px;
+
+}
+
+
+
+.logo {
+  font-family:'Great Vibes', cursive;
+  cursor:pointer;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#ffffff;
+  font-weight:bold;
+  margin-right: auto;
+
+}
+.nav-links{
+  list-style:none;
+}
+
+.nav-links li{
+  display:inline-block;
+  padding: 5px 20px;
+}
+.nav-links li a{
+ transition:0.3s;
+ font-size:18px;
+
+ border-radius: 50px;
+
+}
+
+.nav-links li a:hover{
+  color:#191970;
+  padding: 10px 25px;
+  font-weight:bold;
+  background-color: white;
+  border-radius: 50px;
+
+}
+
+legend{
+  font-size: 60px;
+  background: linear-gradient(to left, #ff6699 0%, #cc66ff 100%);
+  color:#191970;
+  padding: 5px 10px;
+  margin-bottom:10px;
+
+
+}
+
+.tool-grid {
+          background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.0rem;
+          margin: 50px;
+    
+        }
+
+         .tool-item {
+          text-align: center;
+          background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+          color:#191970;
+          border:#191970 3px solid;
+          border-radius:8px ;
+          padding:5px;
+          cursor:pointer;
+          transition: 0.5s ease;
+        
+        }
+
+        .tool-item:hover{
+          background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+          border: 8px solid;
+          border-radius:15px;
+          padding:5px; 
+          color:#fff;
+        }
+
+        .tool-grid .tool-item .fa-heart{
+          color:#ffffff;
+          position:relative;
+          left:-40%;
+          top:10px;
+          font-size: large;
+        }
+        .tool-grid .tool-item .fa-heart:hover{
+          color:red;
+        }
+        .tool-grid .tool-item .fa-star,.fa-star-half-stroke{
+          color:gold;
+        }
+        .book-grid .book-item .fa-star, .fa-star-half-stroke{
+          color:gold;
+        }
+
+        .tool-item .buy-cart
+        {
+        display:flex;
+        justify-content: center;
+        }
+
+.tool-item  .buy-cart .buynow
+{
+    
+    color:#191970;
+    font-weight: bold;
+    background: white;
+    padding : 10px;
+    width: 100%;
+    font-size: large;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+
+.tool-item .buy-cart .buynow:hover{
+    background-color: #191970;
+    color:#ffffff;
+    border:2px solid #191970;
+}
+
+.tool-item img {
+          width: 50%;
+          border-color: #191970;
+        }
+
+.tool-item h3 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.2rem;
+        }
+
+.tool-item h4{
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.7 rem;
+        }
+
+.tool-item p {
+          font-size: 1.3rem;
+        }
+
+        .more{
+          display:inline-block;
+          border-radius:15px ;
+          background-color: #191970;
+          text-align: center;
+          padding: 5px;
+        }
+      
+       
+       footer {
+          color:#191970;
+          text-align: center;
+          font-weight:bold;
+          padding: 1rem;
+          background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+        }
+        </style> 
+
+<body>
+
+    <header>
+        <img src="CQlogo.jpg" style="padding-left:15px;height:85px; width:85px">
+          <a href="#" class="logo">Cure Quest🩺</a>
+      
+      <nav>
+          <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="tools.html" class="action">Tools</a></li>
+          <li><a href="apps.html" >Apps</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+         </ul>
+      </nav>
+      
+  </header>
+  <br>
+  <br>
+
+    <!--Self Relief Tools-->
+
+<legend align="center"><b>Stress-relief tools</b></legend>
+        <fieldset><br<br>
+        <h3 align="center">Here are some newly launched Stress-relief tools</h3>
+        <section id="home">
+        <div class="tool-grid">
+
+        <div id="tool" class="tool-item">
+          <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+        <img src="https://m.media-amazon.com/images/I/61ktzrcIkDL.SL1500.jpg" alt="Neck massager" id="tool-img">
+        <br>
+        <br>
+            <p><b>Neck Massager</b></p> 
+            <br> 
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.899</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <script>
+              function showMe(){
+                alert("your order has been placed");
+              }
+            </script>
+            <script>
+              function showAl(){
+                alert("your item has been added");
+              }
+            </script>
+            <div class="buy-cart">
+              <button class="buynow"onclick="showMe()">Buy</button>
+              <button class="buynow"onclick="showAl()">Add to Cart</button>
+          </div>
+
+          </div>
+
+
+      <script>
+            document.getElementById('tool-img').src = "https://m.media-amazon.com/images/I/61ktzrcIkDL.SL1500.jpg";
+      </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/61g80s6LZLL.AC_UL480_FMwebp_QL65.jpg" alt="massage gun" id="massage gun-img">
+          <br>
+          <br>
+          <h3>Massage Gun</h3>
+          <br>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.1999</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <script>
+              function showMe(){
+                alert("your order has been placed");
+              }
+            </script>
+            <script>
+              function showAl(){
+                alert("your item has been added");
+              }
+            </script>
+            <div class="buy-cart">
+              <button class="buynow"onclick="showMe()">Buy</button>
+              <button class="buynow"onclick="showAl()">Add to Cart</button>
+          </div>
+        </div>
+
+          <script>
+            document.getElementById('massage gun-img').src = "https://m.media-amazon.com/images/I/61g80s6LZLL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/51x-boh8rfL.AC_UL480_FMwebp_QL65.jpg" alt="gel ball" id="gel ball-img"><br><br>
+          <h3>Gel Exercise Ball</h3>
+          <br>
+          
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.299</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <script>
+              function showMe(){
+                alert("your order has been placed");
+              }
+            </script>
+            <script>
+              function showAl(){
+                alert("your item has been added");
+              }
+            </script>
+            <div class="buy-cart">
+            <button class="buynow"onclick="showMe()">Buy</button>
+            <button class="buynow"onclick="showAl()">Add to Cart</button>
+          </div>
+        </div>
+    
+          <script>
+            document.getElementById('gel ball-img').src = "https://m.media-amazon.com/images/I/51x-boh8rfL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/813tHH+fWxL.AC_UL480_FMwebp_QL65.jpg" alt="foot massage" id="foot massage-img"><br><br>
+          <h3>Wooden Foot Massager</h3>
+          <br>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+              
+            <h3>Rs.599</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <script>
+              function showMe(){
+                alert("your order has been placed");
+              }
+            </script>
+            <script>
+              function showAl(){
+                alert("your item has been added");
+              }
+            </script>
+            <div class="buy-cart">
+            <button class="buynow"onclick="showMe()">Buy</button>
+            <button class="buynow"onclick="showAl()">Add to Cart</button>
+            </div>
+          </div>
+
+          <script>
+            document.getElementById('foot massage-img').src = "https://m.media-amazon.com/images/I/813tHH+fWxL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+
+
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br><br>
+          <img src="https://m.media-amazon.com/images/I/715o7Yupg4L.AC_UL960_FMwebp_QL65.jpg" alt="pulse" id="pulse-img">
+          <br><br>
+          <h3>Electric pulse Neck Massager</h3>
+          <br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.999</h3>
+            <br>
+
+            <h4>FREE Delivery</h4>
+            <br>
+            <script>
+              function showMe(){
+                alert("your order has been placed");
+              }
+            </script>
+            <script>
+              function showAl(){
+                alert("your item has been added");
+              }
+            </script>
+            <div class="buy-cart">
+            <button class="buynow"onclick="showMe()">Buy</button>
+            <button class="buynow"onclick="showAl()">Add to Cart</button>
+           </div>
+          </div>
+    
+          <script>
+            document.getElementById('pulse-img').src = "https://m.media-amazon.com/images/I/715o7Yupg4L.AC_UL960_FMwebp_QL65.jpg";
+          </script>
+          
+          <div class="tool-item">
+            <a href=""><i class="fa-solid fa-heart"></i></a><br>
+          <img src="https://m.media-amazon.com/images/I/51B-BrGDPhL.AC_UL480_FMwebp_QL65.jpg" alt="pp" id="pp-img">
+          <br><br>
+
+          <h3>Migraine Pressure Point Clip</h3>
+          <br>
+
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+            <a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+              <br>
+              <br>
+            <h3>Rs.699</h3>
+            <br>
+            <h4>FREE Delivery</h4>
+            <br>
+            <script>
+              function showMe(){
+                alert("your order has been placed");
+              }
+            </script>
+
+            <script>
+              function showAl(){
+                alert("your item has been added");
+              }
+            </script>
+            <div class="buy-cart">
+            <button class="buynow"onclick="showMe()">Buy</button>
+            <button class="buynow"onclick="showAl()">Add to Cart</button>
+          </div>
+          </div>
+          <script>
+            document.getElementById('pp-img').src = "https://m.media-amazon.com/images/I/51B-BrGDPhL.AC_UL480_FMwebp_QL65.jpg";
+          </script>
+        </div>
+        <div>
+          <br><a href="https://www.amazon.in/s?k=stress+relief+tools&crid=1BQE4OEZEX5GN&sprefix=stress+relief+tools%2Caps%2C417&ref=nb_sb_noss_1" class="more">More Tools</a>
+        </div>
+        <br><br>
+        
+      </section>  
+        </fieldset>
+        
+        <br><hr><hr><br>
+        
+</body>   
+</html>     
