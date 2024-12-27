@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="CQlogo.jpg">
+    <title>Cure Quest-Contact Us</title>
+</head>
+<style>
+    
+    *{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: arial;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+    color: #191970;
+    
+}
+header
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #191970;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+    cursor: pointer;
+}
+
+
+
+.logo {
+    font-family:'Great Vibes', cursive;
+    cursor:pointer;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#ffffff;
+    font-weight:bold;
+    margin-right: auto;
+
+}
+.action{
+  padding: 10px 25px;
+    background-color:white;
+    color:#191970;
+    font-weight: bold;
+    border-radius: 50px;
+  
+}
+
+.nav-links{
+    list-style:none;
+}
+
+.nav-links li{
+    display:inline-block;
+    padding: 5px 20px;
+}
+.nav-links li a{
+   transition:0.3s;
+   font-size:18px;
+   font-weight:bold;
+   border-radius: 50px;
+
+}
+
+.nav-links li a:hover{
+    color:#191970;
+    padding: 10px 25px;
+    font-weight:bold;
+    background-color: white;
+    border-radius: 50px;
+
+}    
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+      font-size: 60px;
+      text-align: center;
+      color: #191970;
+      background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+      padding: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.contact-info th, .contact-info td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.contact-info th {
+    background-color: #f0f0f0;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #191970;
+    font-size: large;
+    font-weight: bold;
+    border:  #191970 3px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    background-color:#191970;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-weight:bold;
+    padding: 10px 0;
+    color:#191970;
+    background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
+}
+
+    </style>
+<body>
+
+    <header>
+        <img src="CQlogo.jpg" style="padding-left:15px;height:85px; width:85px">
+        <a href="#" class="logo">Cure Quest🩺</a>
+    
+    <nav>
+        <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="apps.html">Apps</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html" class="action">Contact Us</a></li>
+       </ul>
+    </nav>
+    
+</header>
+    
+        <h1>Contact Us</h1>
+        <center>
+            <p style="color:#191970;background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);padding:5px;"><b> We'd love to hear from you! Fill out the form below or reach out directly using the provided details</b></p>
+        </center>
+    
+    <main>
+        <section class="contact-info">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>curequest@company.com</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+1 234 567 890</td>
+                </tr>
+            </table>
+        </section>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" name="name" required>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" required>
+                <label for="message"><b>Message:</b></label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <script>
+                    function showMessage(){
+                      alert("Your response has been recorded!");
+                    }
+                  </script>
+                <button type="submit"onclick="showMessage()">Sumbit</button>
+            
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
