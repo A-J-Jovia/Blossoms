@@ -25,7 +25,7 @@ body{
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #fdfdfd;
+    background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
     color: #191970;
     
 }
@@ -34,10 +34,10 @@ header
     display:flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #191970;
+    border-bottom: 4px solid #191970;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color:#191970;
+    background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
     cursor: pointer;
 }
 
@@ -46,7 +46,7 @@ header
 .logo {
     font-family:'Great Vibes', cursive;
     cursor:pointer;
-    font-size: 40px;
+    font-size: 50px;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -75,7 +75,7 @@ header
 .nav-links li a{
    transition:0.3s;
    font-size:18px;
-
+   font-weight:bold;
    border-radius: 50px;
 
 }
@@ -105,10 +105,10 @@ header
 
 h1 {
     font-family: 'Great Vibes', cursive;
-      font-size: 80px;
+      font-size: 60px;
       text-align: center;
       color: #191970;
-      background-color: white;
+      background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
       padding: 10px;
 }
 
@@ -157,16 +157,18 @@ form button {
     margin-top: 10px;
     padding: 10px 15px;
 
-    background-color: white;
+   /* background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);*/
     color: #191970;
     font-size: large;
     font-weight: bold;
-    border: 3px solid;
+    border:  #191970 3px solid;
     border-radius: 5px;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 form button:hover {
+    transform: scale(1.05);
     background-color:#191970;
     color: white;
     font-weight: bold;
@@ -174,26 +176,26 @@ form button:hover {
 
 footer {
     text-align: center;
+    font-weight:bold;
     padding: 10px 0;
-    background-color:#191970;
-    color: white;
+    color:#191970;
+    background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);
 }
 
     </style>
 <body>
 
     <header>
-        <img src="CQlogo.jpg" height="auto" width="75px">
+        <img src="CQlogo.jpg" style="padding-left:15px;height:85px; width:85px">
         <a href="#" class="logo">Cure Quest🩺</a>
     
     <nav>
         <ul class="nav-links">
         <li><a href="test.html">Home</a></li>
         <li><a href="doctor.html">Doctors</a></li>
-        <li><a href="#">Medicines</a></li>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Apps</a></li>
-        <li><a href="#">Books</a></li>
+        <li><a href="test.html">Tools</a></li>
+        <li><a href="test.html">Apps</a></li>
+        <li><a href="test.html">Books</a></li>
         <li><a href="aboutus.html">About us</a></li>
         <li><a href="contact.html" class="action">Contact Us</a></li>
        </ul>
@@ -203,7 +205,7 @@ footer {
     
         <h1>Contact Us</h1>
         <center>
-            <p style="background-color:#191970;color:#f0f0f0;padding:5px;"> We'd love to hear from you! Fill out the form below or reach out directly using the provided details.</p>
+            <p style="color:#191970;background: linear-gradient(to right, #ff6699 0%, #cc66ff 100%);padding:5px;"><b> We'd love to hear from you! Fill out the form below or reach out directly using the provided details</b></p>
         </center>
     
     <main>
@@ -222,11 +224,11 @@ footer {
         <section class="contact-form">
             <h2>Get in Touch</h2>
             <form action="#" method="post">
-                <label for="name">Name:</label>
+                <label for="name"><b>Name:</b></label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="email"><b>Email:</b></label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                <label for="message"><b>Message:</b></label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 <button type="submit">Sumbit</button>
             </form>
